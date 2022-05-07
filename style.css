@@ -25,12 +25,69 @@
 
 */
 :root {
-  /* HINT: Your variables will need to go here so you can use them everywhere */
+  --Primary: #f6f6f6;
+  --Secondary-100: #000000;
+  --Secondary-200: #696969;
+  --Secondary-300: #212121;
 }
+
 * {
   box-sizing: border-box;
 }
-body {
+html{
+  height: 100%;
+  font-family: Lato;
+}
+body{
+  display: grid;
   margin: 0;
+  min-height: 100%;
   padding: 0;
+  place-items: center;
+  width: 100%;
+}
+main{
+  height: 80vh;
+  width: 65vw;
+}
+.signup-form{
+  box-shadow: 0 0 13px var(--Secondary-200);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+h1 {
+  color: var(--Secondary-300);
+  display: grid;
+  flex-grow: 20;
+  font-weight: 400;
+  place-items: center;
+}
+.signup-form__content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 80;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 75%;
+}
+.signup-form__row{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.signup-form__row> label{
+  display: flex;
+  justify-content: start;
+}
+.signup-form__row > input{
+  border-style: none;
+  border-bottom: 2px solid #212121;
+  box-shadow: 2px #696969;
 }
